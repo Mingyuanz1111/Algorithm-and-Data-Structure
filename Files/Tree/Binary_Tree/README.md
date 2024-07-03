@@ -80,10 +80,10 @@ void postorder(struct node* node){
 ### inorder
 Tree Traversal โดย Traversal Left Child ก่อน แล้วค่อย visit node นั้น แล้วต่อไปก็ Traversal Right Child
 ```c++
-void postorder(struct node* node){
-    postorder(node->lchd); //postorder left child
-    postorder(node->rchd); //postorder right child
+void inorder(struct node* node){
+    inorder(node->lchd); //inorder left child
     //code for visiting node here
+    inorder(node->rchd); //inorder right child
 }
 ```
 
