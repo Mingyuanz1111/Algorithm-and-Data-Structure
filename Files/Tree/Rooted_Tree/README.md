@@ -20,7 +20,7 @@ struct node{
 };
 ```
 
-<img src="https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/assets/174484621/ca783d69-aacc-4067-86b9-2b271b26a752" width="400">
+<img src="https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/assets/174484621/ca783d69-aacc-4067-86b9-2b271b26a752" width="500">
 
 ## Operation
 
