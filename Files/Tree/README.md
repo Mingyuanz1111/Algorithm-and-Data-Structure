@@ -1,8 +1,9 @@
 # Tree
 ## Contents
-* [What is a Tree?](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/edit/main/Files/Tree/README.md#what-is-a-tree)
-* [Tree Terminology](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/edit/main/Files/Tree/README.md#tree-terminology)
-###### [Next](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/edit/main/Files/Tree/README.md#next)
+* [What is a Tree?](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree#what-is-a-tree)
+* [Tree Terminology](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree#tree-terminology)
+###### [Next](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree#next-1)
+
 ## What is a Tree?
 * เป็น Connected Graph ที่มี n-1 edge จาก n vertex ของ Graph
 * เป็น Graph ที่ไม่มี cycle
@@ -20,10 +21,15 @@
 ## Tree Terminology
 
 <img src="https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/assets/174484621/ef0f973c-1cc1-45cc-b381-33475dcdd911" width="400">
+
 <img src="https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/assets/174484621/11667f54-93a8-4fcf-b866-8d12a11dff33" width="400">
+
 <img src="https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/assets/174484621/7b3d6591-6ab8-402a-ac7e-2e8a60e8b730" width="400">
+
 <img src="https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/assets/174484621/c6c58a4c-a5c0-4a6a-afdf-b8f4ebd69297" width="400">
+
 <img src="https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/assets/174484621/755c4b8d-d963-4a63-862d-c899383b0d84" width="400">
+
 <img src="https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/assets/174484621/d7061331-62ae-403e-bde3-e9659ebae65b" width="400">
 
 ## Next
