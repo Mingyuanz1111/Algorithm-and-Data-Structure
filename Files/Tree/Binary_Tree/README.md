@@ -2,7 +2,7 @@
 ## Contents
 * [Structure](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree/Binary_Tree#structure)
 * [Operation](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree/Binary_Tree#operation)
-* [Array-based Structure for Binary Tree](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree/Binary_Tree#)
+* [Array-based Structure for Binary Tree](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree/Binary_Tree#array-based-structure-for-binary-tree)
 
 ## Structure
 
