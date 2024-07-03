@@ -1,7 +1,7 @@
 # Rooted_Tree
 ## Contents
-* [Structure]()
-* [Operation]()
+* [Structure](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree/Rooted_Tree#structure)
+* [Operation](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree/Rooted_Tree#operation)
 
 ## Structure
 
