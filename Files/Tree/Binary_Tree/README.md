@@ -6,11 +6,11 @@
 
 ## Structure
 
-เป็น Rooted Tree ที่มี child ของ node ใดๆ เพียง 0 นิ้ว 2 node เท่านั้น
+เป็น [Rooted Tree](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree/Rooted_Tree) ที่มี child ของ node ใดๆ เพียง 0 นิ้ว 2 node เท่านั้น
 
 structure ของ node จึงเหมือนกับ Rooted Tree ธรรมดา แต่มีเพียง 2 pointer ที่ใช้ชี้ไปหา child
 
-ในแต่ละ node ของ Tree จะเก็บ
+ในแต่ละ node ของ [Tree](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree) จะเก็บ
 * `key` ข้อมูลของ node นั้น
 * `par` pointer ที่ชี้ไปหา parent node 
 * `lchd` pointer ที่ชี้ไปหา left child
@@ -29,6 +29,9 @@ struct node{
 
 ## Operation
 
+Operation ส่วนใหญ่แทบจะเหมือนกับ [Operation ของ Rooted Tree](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree/Rooted_Tree#operation) เพราะมันต่างกันแค่ pointer ของ child ที่มีแค่ 2 ตัวเท่านั้น  
+และมี Operation เพิ่มมาอีกอันคือ `inorder`
+
 ### createnode
 สร้าง node ที่มีข้อมูล `key` และมี parent เป็น `par`
 ```c++
@@ -38,7 +41,7 @@ struct node* createnode(int key,struct node *par,int side){
     node->par=par; //set parent
     if(par!=NULL){
         if(side) par->rchd=node; //link child to parent in the corresponding side
-        else par->lchd=node; // side=0 is left, side=1 is right
+        else par->lchd=node; //side=0 is left, side=1 is right
     }
     return node;
 }
@@ -58,7 +61,7 @@ int depth(struct node* node){
 ```
 
 ### preorder
-Tree Traversal โดย visit node นั้นก่อน แล้วค่อย Traversal children ต่อ
+Tree Traversal โดย visit node นั้นก่อน แล้วค่อย Traverse children ต่อ
 ```c++
 void preorder(struct node* node){
     //code for visiting node here
@@ -68,7 +71,7 @@ void preorder(struct node* node){
 ```
 
 ### postorder
-Tree Traversal โดย Traversal children ก่อน แล้วค่อย visit node นั้นทีหลัง
+Tree Traversal โดย Traverse children ก่อน แล้วค่อย visit node นั้นทีหลัง
 ```c++
 void postorder(struct node* node){
     postorder(node->lchd); //postorder left child
@@ -78,7 +81,7 @@ void postorder(struct node* node){
 ```
 
 ### inorder
-Tree Traversal โดย Traversal Left Child ก่อน แล้วค่อย visit node นั้น แล้วต่อไปก็ Traversal Right Child
+Tree Traversal โดย Traverse Left Child ก่อน แล้วค่อย visit node นั้น แล้วต่อไปก็ Traverse Right Child
 ```c++
 void inorder(struct node* node){
     inorder(node->lchd); //inorder left child
