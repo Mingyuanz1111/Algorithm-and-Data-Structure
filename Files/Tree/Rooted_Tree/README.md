@@ -5,12 +5,12 @@
 
 ## Structure
 
-ในแต่ละ node ของ Tree จะเก็บ
+ในแต่ละ node ของ [Tree](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree) จะเก็บ
 * `key` ข้อมูลของ node นั้น
 * `par` pointer ที่ชี้ไปหา parent node 
 * `chd` container (vector) ที่เก็บ pointer ที่ชี้ไปหา child node ทั้งหมด
 
-root ของ Tree จะมี `parent = NULL` และ leaf ของ Tree จะมี `chd.empty() = true`
+root ของ Tree จะมี `parent == NULL` และ leaf ของ Tree จะมี `chd.empty() == true`
 
 ```c++
 struct node{
