@@ -1,4 +1,4 @@
-# Binary_Tree
+# Binary Tree
 ## Contents
 * [Structure](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree/Binary_Tree#structure)
 * [Operation](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree/Binary_Tree#operation)
