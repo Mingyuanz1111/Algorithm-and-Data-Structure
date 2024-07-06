@@ -1,8 +1,8 @@
 # Graph Representaion
 ## Contents
 * [Adjacency Matrix](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Representaion#adjacency-matrix)
-* [Adjacency List](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree/Graph_Representaion#adjacency-list)
-* [Edge List](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Tree/Graph_Representaion#edge-list)
+* [Adjacency List](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Representaion#adjacency-list)
+* [Edge List](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Representaion#edge-list)
 
 มีอยู่ 3 แบบ คือ Adjacency Matrix, Adjacency List, Edge List
 
