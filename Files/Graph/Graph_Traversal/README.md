@@ -1,7 +1,7 @@
 # Graph Traversal
 ## Contents
-* [Depth First Search (DFS)](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Traversal#depth-first-search-(dfs))
-* [Breadth First Search (BFS)](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Traversal#breadth-first-search-(bfs))
+* [Depth First Search (DFS)](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Traversal#depth-first-search-dfs)
+* [Breadth First Search (BFS)](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Traversal#breadth-first-search-bfs)
 
 มีอยู่ 2 Algorithm หลักๆ คือ Depth First Search (DFS), Breadth First Search (BFS)
 
