@@ -17,8 +17,6 @@
 ### **[Graph](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph)**
 * [Graph Representaion](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Representaion)
 * [Graph Traversal](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Traversal)
-  * [Depth First Search (DFS)](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Traversal/DFS)
-  * [Breadth First Search (BFS)](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Traversal/BFS)
 * [Shortest Path](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Shortest_Path)
   * [BFS (Shortest Path)](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Shortest_Path/BFS_Shortest_Path)
   * [DP (Shortest Path)](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Shortest_Path/DP_Shortest_Path)
