@@ -111,7 +111,7 @@ int main(){
 
 > Code
 ตัวอย่างการนำเข้าข้อมูลของกราฟ และสำรวจโดยใช้ DFS เริ่มจาก vertex ที่ 0 โดยใช้ stack
-```
+```c++
 #define MAXN 200001
 vector<int> graph[MAXN]; // adjacency list ของกราฟที่จะสำรวจ
 bool visited[MAXN]; // มีค่าเป็น false ทุกช่อง
