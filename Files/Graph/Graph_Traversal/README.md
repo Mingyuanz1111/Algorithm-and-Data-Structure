@@ -50,6 +50,8 @@ int main(){
 }
 ```
 
+Time Complexity : `O(n+m)`
+
 * ในที่นี้จะใช้ adjacency list เพื่อเก็บโครงสร้างกราฟ และมี array `visited` เป็น array ที่เก็บค่า boolean ว่าแต่ละ vertex ถูกเยี่ยมไปแล้วหรือยัง ซึ่ง `visited[i]` จะมีค่าเป็น `true` เมื่อ vertex ที่ `i` เคย**ถูกเรียกฟังก์ชันไปหาแล้ว**
 * ขั้นตอนแรกของ algorithm คือต้องกำหนด vertex เริ่มต้นใดก็ได้ แล้วเริ่มเรียกใช้ฟังก์ชันจาก vertex เริ่มต้นนั้น
 เมื่อฟังก์ชันสำรวจไปถึง vertex หนึ่ง (พารามิเตอร์ `cur` ของฟังก์ชัน) ในฟังก์ชันจะทำขั้นตอนเรียงตามนี้
@@ -107,6 +109,52 @@ int main(){
 * มีอีกวิธีในการ DFS คือการใช้โครงสร้างข้อมูล stack มาช่วยในการจัดลำดับการสำรวจ เนื่องจากโครงสร้างนี้มีลำดับเหมือนกับการ recursive แต่มันไม่สะดวกต่อการเขียนเท่าการ recursive วิธีนี้จึงใช้แทนการ recursive เฉพาะตอนที่ใช้ recursive แล้ว memory limit exceeded  
   แต่โจทย์ส่วนใหญ่ให้ memory เพียงพอสำหรับการ recursive อยู่แล้ว
 
+> Code
+ตัวอย่างการนำเข้าข้อมูลของกราฟ และสำรวจโดยใช้ DFS เริ่มจาก vertex ที่ 0 โดยใช้ stack
+```
+#define MAXN 200001
+vector<int> graph[MAXN]; // adjacency list ของกราฟที่จะสำรวจ
+bool visited[MAXN]; // มีค่าเป็น false ทุกช่อง
+
+int main(){
+    // นำเข้าข้อมูลของกราฟ
+    int n,m,u,v;
+    cin >> n >> m; // กราฟมี n vertices, m edges
+    for(int i=0; i<m; i++){
+        cin >> u >> v;
+        graph[u].push_back(v);
+        graph[v].push_back(u);
+    }
+
+    // กำหนด vertex เริ่มต้นการสำรวจ
+    int src=0;
+
+    // เริ่มทำการ DFS
+    stack<int> st;
+    st.push(src); // นำ vertex เริ่มต้น push ใส่ใน stack
+
+    while(!st.empty()){
+
+        // นำเลข vertex ที่อยู่บนสุดของ stack มาใส่ตัวแปร cur และ pop มันออก
+        int cur=st.top();
+        st.pop();
+
+        // ถ้า cur ถูกเยี่ยมแล้ว ให้ข้ามทันที
+        if(visited[cur]) continue;
+
+        // จดว่า cur ถูกเยี่ยมแล้ว
+        visited[cur]=true;
+
+        // loop ทุก vertex รอบๆ cur ที่ยังไม่ถูกเยี่ยมแล้วทำการเพิ่มใส่ stack ต่อ
+        for(auto v: graph[cur]) if(!visited[v]){
+            st.push(v);
+        }
+    }
+
+    return 0;
+}
+```
+
 * สำหรับกราฟที่ไม่เชื่อมต่อกันทั้งหมด การสำรวจโดยเริ่มจาก vextex เริ่มต้นเพียงจุดเดียวอาจสำรวจได้ไม่ครบทั้งกราฟ เพราะอาจมีบาง vertex ที่เข้าถึงจากจุดเริ่มต้นไม่ได้
 ดังนั้น กรณีต้องการ DFS สำรวจทุก vertex ในกราฟประเภทดังกล่าว ต้องทำการ loop ทุกๆ vertex เริ่มต้นที่เป็นไปได้ และตรวจสอบว่า vertex นั้นถูกเยี่ยมไปหรือยัง ถ้ายังไม่ถูกเยี่ยมก็ให้ทำการ DFS เริ่มจาก vertex นั้นเลย
 
@@ -155,7 +203,7 @@ int main(){
     que.push(src); // นำ vertex เริ่มต้น push ใส่ใน queue
     pushed[src]=1; // จดว่า cur ถูกเพิ่มใส่ queue แล้ว
 
-    while(!q.empty()){
+    while(!que.empty()){
 
         // นำเลข vertex ที่อยู่หัว queue มาใส่ตัวแปร cur และ pop มันออก
         int cur=que.front();
@@ -171,8 +219,9 @@ int main(){
     return 0;
 }
 ```
+Time Complexity : `O(n+m)`
 
-* ในที่นี้จะใช้ adjacency list เพื่อเก็บโครงสร้างกราฟ และมี array `pushed` เป็น array ที่เก็บค่า boolean ว่าแต่ละ vertex ถูกเพิ่มใส่ queue ไปแล้วหรือยัง ซึ่ง `visited[i]` จะมีค่าเป็น `true` เมื่อ vertex ที่ `i` เคย**ถูกเพิ่มใส่ queue ไปแล้ว**
+* ในที่นี้จะใช้ adjacency list เพื่อเก็บโครงสร้างกราฟ และมี array `pushed` เป็น array ที่เก็บค่า boolean ว่าแต่ละ vertex ถูกเพิ่มใส่ queue ไปแล้วหรือยัง ซึ่ง `pushed[i]` จะมีค่าเป็น `true` เมื่อ vertex ที่ `i` เคย**ถูกเพิ่มใส่ queue ไปแล้ว**
 * ขั้นตอนแรกของ algorithm คือต้องกำหนด vertex เริ่มต้นใดก็ได้ แล้วนำ vertex เริ่มต้นนั้นไป push ใส่ queue และจดว่า vertex นั้น ถูกเพิ่มใส่ใน queue แล้ว
 
 หลังจากนั้นจะใช้ while loop เพื่อทำขั้นตอนเรียงตามนี้ในการ loop แต่ละครั้ง :
@@ -198,7 +247,7 @@ for(int src=0; src<n; src++) if(!visited[src]){
     que.push(src);
     pushed[src]=1;
 
-    while(!q.empty()){
+    while(!que.empty()){
         int cur=que.front();
         que.pop();
 
