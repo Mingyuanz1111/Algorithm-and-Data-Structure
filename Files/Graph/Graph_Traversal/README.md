@@ -3,13 +3,13 @@
 * [Depth First Search (DFS)](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Traversal#depth-first-search-dfs)
 * [Breadth First Search (BFS)](https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/tree/main/Files/Graph/Graph_Traversal#breadth-first-search-bfs)
 
-การสำรวจกราฟ คือการ"เยี่ยม"ทุกๆ vertex ของกราฟตามลำดับการสำรวจ โดยมักจะเริ่มจาก vertex เริ่มต้นบางจุดแล้วสำรวจ vertex ข้างๆไปเรื่อยๆจนกว่าจะครบ
+การสำรวจกราฟ คือการ"เยี่ยม"ทุกๆ vertex ของกราฟตามลำดับการสำรวจ โดยมักจะเริ่มจาก vertex เริ่มต้นบางจุดแล้วสำรวจ vertex ที่อยู่ติดกันไปเรื่อยๆจนกว่าจะครบทุก vertex
 
 การสำรวจกราฟมีอยู่ 2 Algorithm หลักๆ ได้แก่ การค้นหาตามแนวลึก (Depth First Search, DFS), การค้นหาตามแนวกว้าง (Breadth First Search, BFS)
-ซึ่งต่างก็มีประโยชน์และสมบัติที่แตกต่างกัน
+ซึ่งต่างก็มีสมบัติและประโยชน์ที่แตกต่างกัน
 
 ## การค้นหาตามแนวลึก (Depth First Search, DFS)
-* เป็นการสำรวจกราฟที่มีแนวคิดโดยเริ่มต้นจาก vertex หนึ่งและสำรวจพุ่งลึกไปใน graph เรื่อยๆ จนกว่าจะตัน  
+* เป็นการสำรวจกราฟที่มีแนวคิดโดยเริ่มต้นจาก vertex หนึ่งและสำรวจพุ่งลึกไปใน graph เรื่อยๆ จนกว่าจะตัน
   แล้วจึง backtrack ย้อนกลับมา vertex ก่อนหน้านี้ และสำรวจต่อไปเรื่อยๆไปยัง vertex ที่ยังไม่ถูกเยี่ยม จนกว่าจะเยี่ยมครบทุก vertex
   
 * วิธี implement ที่ง่ายที่สุด คือการเขียนฟังก์ชัน recursive เพื่อเรียกใช้จาก vertex เริ่มต้นอันหนึ่ง แล้ว recursive ไปหา vertex อื่นๆต่อเรื่อยๆ
