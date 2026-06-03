@@ -39,12 +39,12 @@
 
 ## Adjacency List
 * เก็บกราฟใน `vector<int> graph[n]` โดยที่ `n` เป็นจำนวน vertex
-* `graph[i]` เป็น vector<int> ที่เก็บ edge ทั้งหมด ที่ชี้ออกจาก graph `i` โดยเก็บเป็น เลข vertex ที่ edge ไปหา
+* `graph[i]` เป็น vector<int> ที่เก็บข้อมูลของ edge ทั้งหมดที่ชี้ออกจาก vertex `i` โดยเก็บเป็น เลข vertex ที่แต่ละ edge ชี้ไปหา
 
 > Example: Unweighted Graph
 <img src="https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/assets/174484621/946f5f8e-09a3-4511-9a34-b3417e8ee259" width="800">
 
-* ถ้าจะเก็บ weighted graph ให้ ใช้เป็น `vector<pair<int, int>>` ซึ่ง pair เก็บ `{เลข vertex ที่ไปนา, weight ของ edge นั้น}`
+* ถ้าจะเก็บ weighted graph ให้ใช้เป็น `vector<pair<int, int>>` แทน ซึ่งแต่ละ pair เก็บ `{เลข vertex ที่ไปหา, weight ของ edge นั้น}`
 
 > Example: Weighted Graph
 <img src="https://github.com/Mingyuanz1111/Algorithm-and-Data-Structure/assets/174484621/64270f22-1c7f-4a73-aff8-12e253a3aef2" width="800">
