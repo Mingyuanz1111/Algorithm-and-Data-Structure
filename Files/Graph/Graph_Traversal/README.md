@@ -186,7 +186,7 @@ loop จะจบลงเมื่อ queue ว่าง เพราะมั�
 * BFS สามารถ ทำให้ graph ใดๆ เป็น Rooted Tree ตามทางที่ search ไปได้ด้วย Tree นั้นเรียกว่า BFS Tree
 
 > Example: BFS on Graph
-<img width="1064" height="1252" alt="image" src="https://github.com/user-attachments/assets/5a36feab-69c4-491f-8abf-23e361ed9a05" width="800"/>
+<img width="1668" height="1902" alt="image" src="https://github.com/user-attachments/assets/ae72d19b-ff16-436e-8c18-b940bc36e85d" />
 
 * สำหรับกราฟที่ไม่เชื่อมต่อกันทั้งหมด การสำรวจโดยเริ่มจาก vextex เริ่มต้นเพียงจุดเดียวอาจสำรวจได้ไม่ครบทั้งกราฟ เพราะอาจมีบาง vertex ที่เข้าถึงจากจุดเริ่มต้นไม่ได้
 ดังนั้น กรณีต้องการ BFS สำรวจทุก vertex ในกราฟประเภทดังกล่าว ต้องทำการ loop ทุกๆ vertex เริ่มต้นที่เป็นไปได้ และตรวจสอบว่า vertex นั้นถูกเยี่ยมไปหรือยัง ถ้ายังไม่ถูกเยี่ยมก็ให้ทำการ BFS เริ่มจาก vertex นั้นเลย
