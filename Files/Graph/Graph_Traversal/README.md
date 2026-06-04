@@ -304,3 +304,6 @@ for(int src=0; src<n; src++) if(!pushed[src]){
 }
 ```
 Time Complexity : `O(n+m)`
+
+<img width="1732" height="2447" alt="image" src="https://github.com/user-attachments/assets/eebaf499-8782-4bc3-8126-f7588772c073" />
+
